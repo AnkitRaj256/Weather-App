@@ -4,7 +4,7 @@ import { CardContent, Cards } from './components/Cards'
 import Button from './components/Button'
 import { Sun, Cloud, CloudRain, Snowflake, Zap } from 'lucide-react'
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 const Weather = () => {
   const [city, setCity] = useState('')
